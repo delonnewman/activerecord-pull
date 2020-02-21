@@ -29,12 +29,12 @@ A simple query interface for pulling deeply nested data from records.
 
 ## Why?
 
-Modeling [trees](tree) and [ontologies](ontology) are and excercise in relational database design when using a SQL database.
-Unfortunalty, when dealing with deeply nested and overlapping data (e.g. medical records, social data)
+Modeling [trees][tree] and [ontologies][ontology] are and excercise in relational database design when using a SQL database.
+Unfortunalty, when dealing with deeply nested and overlapping data (e.g. medical records, social graphs)
 trees and ontologies won't do. We need to model graphs, a much more sparsely structured data model, but
 this leads to very complex table structures and very complex SQL queries.
 
-This pull syntax is inspired by the pull syntax that is used in [Datomic](datomic-pull), a database that is designed to model
+This pull syntax is inspired by the pull syntax that is used in [Datomic][datomic-pull], a database that is designed to model
 graph-like structures. This gem plugs that syntax into ActiveRecord. As a bonus it makes querying trees and ontologies simple too!
 
 ## Installation
@@ -57,10 +57,10 @@ Or install it yourself as:
 
 - [Ancestry](https://github.com/stefankroes/ancestry)
 - [Graphiti](https://www.graphiti.dev/)
-- [Datomic](datomic)
+- [Datomic][datomic]
 - [GraphQL](https://graphql.org/)
-- [Entity Attribute Value Model](eav-model)
-- [RDF](rdf)
+- [Entity Attribute Value Model][eav-model]
+- [RDF][rdf]
 
 ## License
 
