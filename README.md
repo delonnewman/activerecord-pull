@@ -7,7 +7,7 @@ A simple query interface for pulling deeply nested data from records.
 ```ruby
   class Survey < ActiveRecord::Base
     has_many :questions
-    has_many :replies
+    has_many :responses
   end
 
   class Question < ActiveRecord::Base
@@ -19,12 +19,13 @@ A simple query interface for pulling deeply nested data from records.
     belongs_to :question
   end
 
-  class Replies < ActiveRecord::Base
+  class Response < ActiveRecord::Base
     belongs_to :survey
+    has_many :answers
   end
 
   Survey.find(34).pull(:name, questions: [:text, answers: [:created_at]])
-  Survey.where('created_at < ?', Date.new(2018, 7, 5)).pull(:name, questions: :text) 
+  Response.where('created_at < ?', Date.new(2018, 7, 5)).pull({ survey: :name }, { answers: :value }) 
 ```
 
 ## Why?
