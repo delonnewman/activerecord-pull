@@ -30,16 +30,18 @@ A simple query interface for pulling deeply nested data from records.
 
 ## Why?
 
-When using an SQL database modeling [trees][tree] and [ontologies][ontology] is and excercise in relational database design.
-Unfortunalty, when dealing with deeply nested and *overlapping* data (e.g. medical records, social graphs)
+When using an SQL database modeling [trees][tree] and [ontologies][ontology] is an exercise in relational database design.
+Unfortunately, when dealing with deeply nested and *overlapping* data (e.g. medical records and social graphs)
 trees and ontologies won't do. We need to model graphs, a much more sparsely structured data model, but
-this leads to very complex table structures and very complex SQL queries.
+this leads to very complex (or sparse) table structures and very complex SQL queries.
 
 Alternatives to SQL databases like [Datomic][datomic], [RDF][rdf] and graph databases resolve this problem in the general case,
-but sometimes those solutions are not a viable option for us.
+but sometimes those solutions are not a viable option for one reason or another. This gem attempts to provide some of the
+convenience of these solutions as an extension to ActiveRecord. As a bonus it makes querying trees and ontologies simple too!
 
-This pull syntax is inspired by the pull syntax that is used in [Datomic][datomic-pull], a database that is designed to model
-graph-like structures. This gem plugs that syntax into ActiveRecord. As a bonus it makes querying trees and ontologies simple too!
+## Pull Syntax
+
+The pull syntax is inspired by the pull syntax that is used in [Datomic][datomic-pull].
 
 ## Installation
 
