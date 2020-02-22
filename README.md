@@ -74,7 +74,7 @@ Or install it yourself as:
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
 [datomic]: https://www.datomic.com/
-[datomic-pull]: https://docs.datomic.com/on-prem/pull.html
+[datomic-pull]: https://docs.datomic.com/on-prem/pull.html#pull-grammar
 [eav-model]: https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model
 [rdf]: https://en.wikipedia.org/wiki/Resource_Description_Framework
 [tree]: https://en.wikipedia.org/wiki/Tree_(data_structure)
