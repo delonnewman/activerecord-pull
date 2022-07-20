@@ -9,6 +9,23 @@ ActiveRecord::Base.connection.create_table(:people) do |t|
   t.string :first_name
   t.string :last_name
   t.integer :age
+  t.bigint :address_id
+end
+
+ActiveRecord::Base.connection.create_table(:addresses) do |t|
+  t.string :street1
+  t.string :street2
+  t.string :city
+  t.string :state
+end
+
+class Person < ActiveRecord::Base
+  belongs_to :address
+  accepts_nested_attributes_for :address
+end
+
+class Address < ActiveRecord::Base
+  has_many :people
 end
 
 RSpec.configure do |config|
@@ -21,6 +38,4 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
-
-  class Person < ActiveRecord::Base; end
 end

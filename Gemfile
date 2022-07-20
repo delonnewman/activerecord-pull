@@ -8,4 +8,5 @@ gemspec
 gem 'activerecord', require: 'active_record'
 gem 'pry'
 gem 'rubocop'
+gem 'rubocop-rspec'
 gem 'sqlite3'
