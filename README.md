@@ -1,3 +1,5 @@
+[![Ruby](https://github.com/delonnewman/activerecord-pull/actions/workflows/ruby.yml/badge.svg)](https://github.com/delonnewman/activerecord-pull/actions/workflows/ruby.yml)
+
 # ActiveRecord::Pull::Alpha
 
 A simple query interface for pulling deeply nested data from records.
