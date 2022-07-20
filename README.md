@@ -67,7 +67,7 @@ Or install it yourself as:
 - [GraphQL](https://graphql.org/)
 - [Entity Attribute Value Model][eav-model]
 - [RDF][rdf]
-- [A City is not a Tree](https://www.patternlanguage.com/archive/cityisnotatree.html)
+- [A City is Not a Tree](https://www.patternlanguage.com/archive/cityisnotatree.html)
 
 ## License
 
