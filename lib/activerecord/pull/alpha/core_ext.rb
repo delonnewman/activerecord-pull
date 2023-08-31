@@ -1,4 +1,4 @@
-require "activerecord/pull/alpha/core"
+require 'activerecord/pull/alpha/core'
 
 module Enumerable
   def pull(*pattern)

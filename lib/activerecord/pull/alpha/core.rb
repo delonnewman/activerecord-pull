@@ -7,7 +7,6 @@ module ActiveRecord
       class ReflectionError < RuntimeError; end
 
       module Core
-
         class << self
           # Apply the pull query to a collection of records.
           #

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    activerecord-pull-alpha (0.1.1)
+    activerecord-pull-alpha (0.1.2)
 
 GEM
   remote: https://rubygems.org/
@@ -71,6 +71,7 @@ GEM
 PLATFORMS
   -darwin-21
   arm64-darwin-21
+  arm64-darwin-22
   x86_64-linux
 
 DEPENDENCIES

@@ -12,3 +12,5 @@
 tags
 /.idea/
 /.DS_Store
+/.clj-kondo/
+/.lsp/
